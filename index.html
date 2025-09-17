@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Подсолнухи</title>
+  <style>
+    /* Стили для оформления сайта */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f5e27a 0%, #f59e27 100%);
+      color: #5b3a00;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background-color: #f9d423;
+      width: 100%;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(90, 58, 0, 0.4);
+    }
+
+    main {
+      max-width: 900px;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff9d5;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(245, 158, 39, 0.3);
+      width: 280px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(245, 158, 39, 0.5);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+      color: #b86b00;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #6b4a00;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      background-color: #f9d423;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #5b3a00;
+    }
+
+    /* Адаптив */
+    @media(max-width: 600px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Подсолнухи — золотое солнце полей</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/06/15/22/34/sunflower-1454566_1280.jpg" alt="Подсолнух в поле" />
+      <h2>Яркий подсолнух</h2>
+      <p>Подсолнухи широко известны своими крупными желтыми цветками, которые символизируют солнце и тепло.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2018/09/09/19/16/sunflower-3666432_1280.jpg" alt="Подсолнух крупный план" />
+      <h2>Красота в деталях</h2>
+      <p>Каждый подсолнух уникален, и его симметрия вдохновляет художников и натуралистов.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2020/09/10/18/41/sunflower-5555017_1280.jpg" alt="Подсолнух и небо" />
+      <h2>Подсолнух и небо</h2>
+      <p>Подсолнухи поворачиваются к солнцу в течение дня, словно следуя за лучами света.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Все права защищены | Сайт про подсолнухи
+  </footer>
+
+</body>
+</html>
